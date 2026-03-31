@@ -92,6 +92,11 @@ nvim/
 | `<leader>sd` | Diagnostics |
 | `<leader>sn` | Neovim config files |
 
+## Prerequisites
+
+- Neovim 0.12+
+- `tree-sitter-cli` — required by nvim-treesitter to compile parsers
+
 ## Setup
 
 1. Clone this repo to `~/.config/nvim`

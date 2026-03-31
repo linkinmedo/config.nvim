@@ -1,8 +1,10 @@
 return { -- Highlight, edit, and navigate code
 	"nvim-treesitter/nvim-treesitter",
+	branch = "main",
+	lazy = false,
 	build = ":TSUpdate",
-	opts = {
-		ensure_installed = {
+	config = function()
+		require("nvim-treesitter").install({
 			"vim",
 			"lua",
 			"luadoc",
@@ -15,10 +17,14 @@ return { -- Highlight, edit, and navigate code
 			"dart",
 			"markdown",
 			"markdown_inline",
-		},
-		auto_install = true,
-		highlight = { enable = true },
-	},
+		})
+
+		vim.api.nvim_create_autocmd("FileType", {
+			callback = function(args)
+				pcall(vim.treesitter.start, args.buf)
+			end,
+		})
+	end,
 	dependencies = {
 		{
 			"OXY2DEV/markview.nvim",
