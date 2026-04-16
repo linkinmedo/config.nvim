@@ -4,8 +4,8 @@ local g = vim.g
 local cmd = vim.cmd
 
 -- Set <space> as the leader key
-g.mapleader = ' '
-g.maplocalleader = ' '
+g.mapleader = " "
+g.maplocalleader = " "
 
 -- Enable nerd font
 g.have_nerd_font = false
@@ -17,7 +17,7 @@ opt.number = true
 opt.relativenumber = true
 
 -- Enable mouse mode
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- Enable break indent
 opt.breakindent = true
@@ -30,7 +30,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- Keep signcolumn on by default
-opt.signcolumn = 'yes'
+opt.signcolumn = "yes"
 
 -- Decrease update time
 -- opt.updatetime = 250
@@ -47,7 +47,7 @@ opt.splitbelow = true
 -- opt.listchars = { tab = '│ ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
-opt.inccommand = 'split'
+opt.inccommand = "split"
 
 -- Show which line your cursor is on
 opt.cursorline = true
@@ -63,5 +63,8 @@ o.smartindent = true
 o.tabstop = 2
 o.softtabstop = 2
 
+-- BIDI (for arabic)
+o.termbidi = true
+
 -- Set the colorscheme
-cmd[[colorscheme catppuccin-mocha]]
+cmd([[colorscheme catppuccin-mocha]])

@@ -11,7 +11,8 @@ return {
 					"css-lsp",
 					"prettierd",
 					"angularls",
-					"biome",
+					"oxfmt",
+					"oxlint",
 				},
 			},
 		},
@@ -225,7 +226,11 @@ return {
 			gopls = {},
 			tsgo = {},
 			html = {},
-			cssls = {},
+			cssls = {
+				capabilities = {
+					colorProvider = false,
+				},
+			},
 			angularls = {},
 			lua_ls = {
 				-- cmd = { ... },
@@ -252,7 +257,8 @@ return {
 			"css-lsp",
 			"prettierd",
 			"angularls",
-			"biome",
+			"oxfmt",
+			"oxlint",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

@@ -43,9 +43,11 @@ nvim/
 
 **LSP servers:** gopls, tsgo, html, cssls, angularls, lua_ls
 
-**Formatters:** stylua (Lua), prettierd + biome (JS/TS/HTML/CSS/JSON/YAML)
+**Formatters:** stylua (Lua), prettierd + oxfmt (JS/TS/HTML/CSS/JSON/YAML)
 
-**Treesitter parsers:** lua, html, css, javascript, typescript, tsx, c, dart, markdown, vim
+**Linters:** oxlint (JS/TS)
+
+**Treesitter parsers:** lua, html, css, javascript, typescript, tsx, json, c, dart, markdown, vim
 
 ## Key Mappings
 

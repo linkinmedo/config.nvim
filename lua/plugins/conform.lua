@@ -6,13 +6,13 @@ return {
 			local options = {
 				formatters_by_ft = {
 					lua = { "stylua" },
-					css = { "prettierd", "biome" },
-					json = { "prettierd", "biome" },
-					html = { "prettierd", "biome" },
-					htmlangular = { "prettierd", "biome" },
-					javascript = { "prettierd", "biome" },
-					typescript = { "prettierd", "biome" },
-					yaml = { "prettierd", "biome" },
+					css = { "prettierd", "oxfmt" },
+					json = { "prettierd", "oxfmt" },
+					html = { "prettierd", "oxfmt" },
+					htmlangular = { "prettierd", "oxfmt" },
+					javascript = { "prettierd", "oxfmt" },
+					typescript = { "prettierd", "oxfmt" },
+					yaml = { "prettierd", "oxfmt" },
 				},
 
 				-- format_on_save = {
