@@ -132,6 +132,9 @@ return {
 				--
 				-- When you move your cursor, the highlights will be cleared (the second autocommand).
 				local client = vim.lsp.get_client_by_id(event.data.client_id)
+				if client and client.name == "cssls" then
+					vim.lsp.document_color.enable(false, { bufnr = event.buf })
+				end
 				if
 					client
 					and client_supports_method(
@@ -226,11 +229,7 @@ return {
 			gopls = {},
 			tsgo = {},
 			html = {},
-			cssls = {
-				capabilities = {
-					colorProvider = false,
-				},
-			},
+			cssls = {},
 			angularls = {},
 			lua_ls = {
 				-- cmd = { ... },

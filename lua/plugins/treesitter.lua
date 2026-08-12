@@ -18,6 +18,8 @@ return { -- Highlight, edit, and navigate code
 			"dart",
 			"markdown",
 			"markdown_inline",
+      "toml",
+      "python"
 		})
 
 		vim.api.nvim_create_autocmd("FileType", {
