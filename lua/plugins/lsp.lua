@@ -227,7 +227,7 @@ return {
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			gopls = {},
-			tsgo = {},
+			tsc = {},
 			html = {},
 			cssls = {},
 			angularls = {},
@@ -250,7 +250,7 @@ return {
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"lua-language-server",
-			"tsgo",
+			"tsc",
 			"stylua",
 			"html-lsp",
 			"css-lsp",
