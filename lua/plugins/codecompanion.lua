@@ -11,8 +11,8 @@ return {
 			strategies = {
 				chat = {
 					adapter = {
-						name = "copilot",
-						model = "gpt-5-mini",
+						name = "opencode",
+						model = "opencode/muse-spark-1.3-contributor-free",
 					},
 				},
 				inline = {
