@@ -13,6 +13,9 @@ return {
 					"angularls",
 					"oxfmt",
 					"oxlint",
+					"ruff",
+					"ty",
+					"bashls",
 				},
 			},
 		},
@@ -258,6 +261,9 @@ return {
 			"angularls",
 			"oxfmt",
 			"oxlint",
+			"ruff",
+			"ty",
+			"bashls",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

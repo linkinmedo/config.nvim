@@ -13,6 +13,9 @@ return {
 					javascript = { "prettierd", "oxfmt" },
 					typescript = { "prettierd", "oxfmt" },
 					yaml = { "prettierd", "oxfmt" },
+					python = { "ruff" },
+					sh = { "bashls" },
+					bash = { "bashls" },
 				},
 
 				-- format_on_save = {
