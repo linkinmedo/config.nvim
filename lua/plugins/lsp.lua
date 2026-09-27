@@ -16,6 +16,7 @@ return {
 					"ruff",
 					"ty",
 					"bashls",
+					"shfmt",
 				},
 			},
 		},
@@ -264,6 +265,7 @@ return {
 			"ruff",
 			"ty",
 			"bashls",
+			"shfmt",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
