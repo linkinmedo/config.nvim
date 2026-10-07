@@ -67,4 +67,4 @@ o.softtabstop = 2
 o.termbidi = true
 
 -- Set the colorscheme
-cmd([[colorscheme catppuccin-mocha]])
+cmd([[colorscheme rose-pine]])

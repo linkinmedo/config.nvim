@@ -23,24 +23,27 @@ return {
 		opts = {},
 	},
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"rose-pine/neovim",
+		name = "rose-pine",
 		priority = 1000,
 		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-				integrations = {
-					cmp = true,
-					gitsigns = true,
-					nvimtree = true,
-					treesitter = true,
-					notify = false,
-					mini = {
-						enabled = true,
-						indentscope_color = "",
-					},
-					-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+			require("rose-pine").setup({
+				variant = "moon",
+				enable = {
+					terminal = true,
 				},
+				-- integrations = {
+				-- 	cmp = true,
+				-- 	gitsigns = true,
+				-- 	nvimtree = true,
+				-- 	treesitter = true,
+				-- 	notify = false,
+				-- 	mini = {
+				-- 		enabled = true,
+				-- 		indentscope_color = "",
+				-- 	},
+				-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+				-- },
 			})
 		end,
 	},

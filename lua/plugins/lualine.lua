@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	dependencies = { "catppuccin/nvim" },
+	-- dependencies = { "catppuccin/nvim" },
 	event = "VeryLazy",
 	-- hide on startpage
 	init = function()
@@ -19,7 +19,7 @@ return {
 
 		local opts = {
 			options = {
-				theme = "catppuccin-nvim",
+				theme = "rose-pine",
 				component_separators = { left = "|", right = "|" },
 				section_separators = { left = "", right = "" },
 			},
