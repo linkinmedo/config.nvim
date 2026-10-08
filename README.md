@@ -38,6 +38,7 @@ nvim/
 | [undotree](https://github.com/mbbill/undotree)                                  | Visual undo history                |
 | [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)               | Highlight TODOs                    |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | Indent guides                      |
+| [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)        | Markdown preview in browser        |
 
 ## Language Support
 
@@ -78,6 +79,7 @@ nvim/
 | `<leader>rn` | LSP rename            |
 | `<leader>ca` | Code action           |
 | `<leader>th` | Toggle inlay hints    |
+| `<leader>mp` | Markdown preview      |
 
 ### Telescope
 
